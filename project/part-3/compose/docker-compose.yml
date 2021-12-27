@@ -1,4 +1,3 @@
-# TODO
 services:
 
   products-db:
@@ -18,8 +17,6 @@ services:
   
   web:
     image: ${REPOSITORY:-widgetario}/web:${RELEASE:-21.12}-${BUILD_NUMBER:-0}
-    ports:
-      - "8080:80"
     networks:
       - app-net
 
